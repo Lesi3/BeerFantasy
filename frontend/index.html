@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title data-res="app_title"></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <main class="login-container">
+        <h1 data-res="app_title"></h1>
+
+        <form id="loginForm">
+            <label>
+                Usuario
+                <input type="text" id="username" required>
+            </label>
+
+            <label>
+                Contraseña
+                <input type="password" id="password" required>
+            </label>
+
+            <button type="submit">Entrar</button>
+        </form>
+
+        <p id="loginError" class="error"></p>
+    </main>
+
+    <!-- JS -->
+    <script src="js/res/es.js"></script>
+    <script src="js/res.js"></script>
+    <script src="js/index.js"></script>
+    
+    <script>
+        loadLanguage("es");
+    </script>
+</body>
+</html>

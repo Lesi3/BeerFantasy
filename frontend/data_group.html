@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title data-res="data_group_title"></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <main class="data-group-container">
+        <h1 id="groupName"></h1>
+
+        <table class="group-summary-table">
+            <tr>
+                <td data-res="group_sessions"></td>
+                <td id="groupSessions"></td>
+            </tr>
+            <tr>
+                <td data-res="group_total_botellines"></td>
+                <td id="groupBotellines"></td>
+            </tr>
+            <tr>
+                <td data-res="group_members"></td>
+                <td id="groupMembers"></td>
+            </tr>
+            <tr>
+                <td data-res="group_podium"></td>
+                <td id="groupPodium"></td>
+            </tr>
+        </table>
+
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th data-res="group_member_name"></th>
+                    <th data-res="group_member_botellines"></th>
+                    <th data-res="group_member_sessions"></th>
+                    <th data-res="group_member_record"></th>
+                </tr>
+            </thead>
+            <tbody id="groupMembersTable">
+                <!-- una fila = un integrante -->
+            </tbody>
+        </table>
+    </main>
+
+    <script src="js/res/es.js"></script>
+    <script src="js/res.js"></script>
+    <script src="js/data_group.js"></script>
+
+    <script>
+        loadLanguage("es");
+    </script>
+
+</body>
+</html>

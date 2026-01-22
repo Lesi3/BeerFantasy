@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title data-res="session_end_title"></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <main class="session-end-container">
+        <h1 data-res="session_end_heading"></h1>
+
+        <!-- Resumen de bebidas (tabla heredada de la sesión) -->
+        <section class="session-summary">
+            <h2 data-res="session_summary_title"></h2>
+
+            <table class="drinks-table">
+                <thead>
+                    <tr>
+                        <th data-res="drink_name"></th>
+                        <th data-res="drink_quantity"></th>
+                        <th data-res="drink_price"></th>
+                    </tr>
+                </thead>
+                <tbody id="sessionSummaryTable">
+                    <!-- aquí se vuelca la última tabla generada -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Información de la sesión -->
+        <section class="session-info">
+            <p>
+                <span data-res="session_total_time"></span>:
+                <span id="totalTime"></span>
+            </p>
+        </section>
+
+        <!-- Datos opcionales -->
+        <section class="session-extra">
+            <label>
+                <span data-res="session_description"></span>
+                <textarea id="sessionDescription" rows="3"></textarea>
+            </label>
+
+            <label>
+                <span data-res="session_score"></span>
+                <input type="number" id="sessionScore" min="0" max="10">
+            </label>
+        </section>
+
+        <button id="confirmEndSessionBtn" class="confirm-session"
+                data-res="session_confirm_end">
+        </button>
+    </main>
+
+    <!-- res -->
+    <script src="js/res/es.js"></script>
+    <script src="js/res.js"></script>
+
+    <!-- lógica -->
+    <script src="js/session_end.js"></script>
+
+    <script>
+        loadLanguage("es");
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title data-res="session_start_title"></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <main class="session-start-container">
+        <h1 data-res="session_start_heading"></h1>
+
+        <label>
+            <span data-res="session_select_group"></span>
+            <select id="groupSelect"></select>
+        </label>
+
+        <div class="session-info">
+            <p>
+                <span data-res="session_date"></span>:
+                <span id="currentDate"></span>
+            </p>
+            <p>
+                <span data-res="session_time"></span>:
+                <span id="currentTime"></span>
+            </p>
+        </div>
+
+        <p class="session-warning" data-res="session_warning"></p>
+
+        <button id="startSessionBtn" data-res="session_start_button"></button>
+    </main>
+
+    <!-- res -->
+    <script src="js/res/es.js"></script>
+    <script src="js/res.js"></script>
+
+    <!-- lógica -->
+    <script src="js/session_start.js"></script>
+
+    <script>
+        loadLanguage("es");
+    </script>
+
+</body>
+</html>

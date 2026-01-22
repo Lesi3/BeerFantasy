@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title data-res="data_own_title"></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <main class="data-own-container">
+        <h1 data-res="data_own_heading"></h1>
+
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th data-res="data_sessions"></th>
+                    <th data-res="data_date"></th>
+                    <th data-res="data_drinks"></th>
+                    <th data-res="data_time"></th>
+                    <th data-res="data_blood_alcohol"></th>
+                    <th data-res="data_description"></th>
+                    <th data-res="data_score"></th>
+                    <th data-res="data_group"></th>
+                </tr>
+            </thead>
+            <tbody id="ownDataTable">
+                <!-- una fila = una sesión -->
+            </tbody>
+        </table>
+
+        <section class="data-summary">
+            <table>
+                <tr>
+                    <td data-res="data_total_sessions"></td>
+                    <td id="totalSessions"></td>
+                </tr>
+                <tr>
+                    <td data-res="data_total_botellines"></td>
+                    <td id="totalBotellines"></td>
+                </tr>
+                <tr>
+                    <td data-res="data_record_alcohol"></td>
+                    <td id="recordAlcohol"></td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <script src="js/res/es.js"></script>
+    <script src="js/res.js"></script>
+    <script src="js/data_own.js"></script>
+
+    <script>
+        loadLanguage("es");
+    </script>
+
+</body>
+</html>

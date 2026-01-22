@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title data-res="session_run_title"></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <main class="session-run-container">
+        <h1 data-res="session_run_heading"></h1>
+
+        <label>
+            <span data-res="session_select_drink"></span>
+            <select id="drinkSelect">
+                <!-- bebidas dinámicas -->
+            </select>
+        </label>
+
+        <button id="addDrinkBtn" data-res="session_add_drink"></button>
+
+        <table class="drinks-table">
+            <thead>
+                <tr>
+                    <th data-res="drink_name"></th>
+                    <th data-res="drink_quantity"></th>
+                    <th data-res="drink_price"></th>
+                </tr>
+            </thead>
+            <tbody id="drinksTableBody">
+            </tbody>
+        </table>
+
+        <button id="endSessionBtn" class="end-session" data-res="session_end_button"></button>
+    </main>
+
+    <!-- res -->
+    <script src="js/res/es.js"></script>
+    <script src="js/res.js"></script>
+    <!-- lógica -->
+    <script src="js/session_run.js"></script>
+
+    <script>
+        loadLanguage("es");
+    </script>
+
+</body>
+</html>

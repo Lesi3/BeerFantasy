@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title data-res="data_menu_title"></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <main class="data-menu-container">
+        <h1 data-res="data_menu_heading"></h1>
+
+        <button id="ownDataBtn" data-res="data_menu_own"></button>
+
+        <label>
+            <span data-res="data_menu_group_select"></span>
+            <select id="groupSelect">
+                <!-- grupos dinámicos -->
+            </select>
+        </label>
+
+        <button id="groupDataBtn" data-res="data_menu_group"></button>
+    </main>
+
+    <!-- res -->
+    <script src="js/res/es.js"></script>
+    <script src="js/res.js"></script>
+    <script src="js/data_menu.js"></script>
+
+    <script>
+        loadLanguage("es");
+    </script>
+
+</body>
+</html>
