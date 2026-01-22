@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from db import get_connection
+from db import getConnection
 
 app = Flask(__name__)
 
@@ -13,7 +13,7 @@ def login():
     name = data["name"]
     password = data["password"]
 
-    conn = get_connection()
+    conn = getConnection()
     cursor = conn.cursor(dictionary=True)
 
     query = """
@@ -37,7 +37,7 @@ def login():
 
 @app.route("/api/groups/<int:user_id>", methods=["GET"])
 def get_user_groups(user_id):
-    conn = get_connection()
+    conn = getConnection()
     cursor = conn.cursor(dictionary=True)
 
     query = """
@@ -56,7 +56,7 @@ def get_user_groups(user_id):
 
 @app.route("/api/drinks", methods=["GET"])
 def get_drinks():
-    conn = get_connection()
+    conn = getConnection()
     cursor = conn.cursor(dictionary=True)
 
     query = """
