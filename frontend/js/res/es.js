@@ -1,10 +1,11 @@
 const TEXT_ES = {
+    back_button: "← Volver",
     //index.html
     app_title: "Puto borrach@",
     login_user: "Usuario",
     login_password: "Contraseña",
     login_button: "Sesiar inición",
-    login_error: "Usuario o contraseña incorrectas inútil",
+    login_error: "Usuario o contraseña incorrecto, inútil",
 
     //menu.html
     menu_title: "Menú",

@@ -67,6 +67,12 @@ button.confirm-session {
     color: white;
 }
 
+.back-btn {
+    padding: 8px 14px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
