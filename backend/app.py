@@ -22,6 +22,10 @@ def css(filename):
 def js(filename):
     return send_from_directory(os.path.join(FRONTEND_DIR, "js"), filename)
 
+@app.route("/menu")
+def menu():
+    return render_template("menu.html")
+
 
 @app.route("/login", methods=["POST"])
 def login():

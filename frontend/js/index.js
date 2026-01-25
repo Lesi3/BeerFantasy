@@ -30,7 +30,7 @@ function login() {
     })
     .then(data => {
         // login correcto → ir al menú
-        window.location.href = "menu.html";
+        window.location.href = "/menu.html";
     })
     .catch(error => {
         errorP.innerText = "Usuario o contraseña incorrectos";
