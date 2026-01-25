@@ -1,12 +1,27 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_from_directory
+import os
 from db import getConnection
 from flask import render_template
 
 app = Flask(__name__)
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+FRONTEND_DIR = os.path.join(BASE_DIR, "..", "frontend")
+
+app = Flask(__name__)
+
 @app.route("/")
 def index():
-    return render_template("index.html")
+    return send_from_directory(FRONTEND_DIR, "index.html")
+
+@app.route("/css/<path:filename>")
+def css(filename):
+    return send_from_directory(os.path.join(FRONTEND_DIR, "css"), filename)
+
+@app.route("/js/<path:filename>")
+def js(filename):
+    return send_from_directory(os.path.join(FRONTEND_DIR, "js"), filename)
+
 
 @app.route("/login", methods=["POST"])
 def login():
