@@ -1,7 +1,12 @@
 from flask import Flask, request, jsonify
 from db import getConnection
+from flask import render_template
 
 app = Flask(__name__)
+
+@app.route("/")
+def index():
+    return render_template("index.html")
 
 @app.route("/login", methods=["POST"])
 def login():
